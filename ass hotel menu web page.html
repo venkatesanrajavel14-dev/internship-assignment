@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Restaurant Menu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836'); /* Restaurant background */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      font-weight: 600;
+    }
+
+    .menu-section {
+      padding: 40px;
+      text-align: center;
+      background: rgba(255,255,255,0.9);
+      margin: 30px auto;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    .menu-section h2 {
+      font-size: 2em;
+      margin-bottom: 25px;
+      color: #222;
+      border-bottom: 3px solid #e67e22;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .menu-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      width: 250px;
+      padding: 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+      font-size: 1.4em;
+      font-weight: 600;
+    }
+
+    .price {
+      font-size: 1.2em;
+      color: #e74c3c;
+      font-weight: bold;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      border-color: #e67e22;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Delicious Restaurant Menu</h1>
+  </header>
+
+  <!-- Starters -->
+  <section class="menu-section">
+    <h2>Starters</h2>
+    <div class="menu-grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1604908177522-432f6a6a1c1d" alt="Spring Rolls">
+        <h3>Spring Rolls</h3>
+        <p class="price">₹120</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088" alt="Garlic Bread">
+        <h3>Garlic Bread</h3>
+        <p class="price">₹90</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Course -->
+  <section class="menu-section">
+    <h2>Main Course</h2>
+    <div class="menu-grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f" alt="Paneer Butter Masala">
+        <h3>Paneer Butter Masala</h3>
+        <p class="price">₹250</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1604908177522-432f6a6a1c1d" alt="Chicken Biryani">
+        <h3>Chicken Biryani</h3>
+        <p class="price">₹300</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Desserts -->
+  <section class="menu-section">
+    <h2>Desserts</h2>
+    <div class="menu-grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1601979031481-5091e1b2a1c7" alt="Chocolate Cake">
+        <h3>Chocolate Cake</h3>
+        <p class="price">₹150</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f" alt="Ice Cream">
+        <h3>Ice Cream</h3>
+        <p class="price">₹100</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
