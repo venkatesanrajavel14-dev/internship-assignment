@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College ERP Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background-color: #f4f6f9;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      position: fixed;
+      height: 100%;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      color: #f39c12;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 12px 0;
+      padding: 8px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #34495e;
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 220px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top Navbar */
+    .navbar {
+      background-color: #fff;
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .navbar h1 {
+      font-size: 20px;
+      color: #2c3e50;
+    }
+
+    .navbar button {
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Statistics Cards */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .stat-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .stat-card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .stat-card p {
+      font-size: 22px;
+      font-weight: bold;
+      color: #f39c12;
+    }
+
+    /* Student Cards */
+    .students {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .student-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .student-card h2 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #2c3e50;
+    }
+
+    .student-card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .student-card button {
+      background-color: #f39c12;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+      .main {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>ERP Dashboard</h2>
+    <a href="#">Home</a>
+    <a href="#">Students</a>
+    <a href="#">Courses</a>
+    <a href="#">Faculty</a>
+    <a href="#">Placements</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <!-- Top Navbar -->
+    <div class="navbar">
+      <h1>College ERP</h1>
+      <button>Logout</button>
+    </div>
+
+    <!-- Statistics Cards -->
+    <div class="stats">
+      <div class="stat-card">
+        <h3>Total Students</h3>
+        <p>1200</p>
+      </div>
+      <div class="stat-card">
+        <h3>Courses</h3>
+        <p>35</p>
+      </div>
+      <div class="stat-card">
+        <h3>Faculty</h3>
+        <p>80</p>
+      </div>
+      <div class="stat-card">
+        <h3>Placements</h3>
+        <p>300</p>
+      </div>
+    </div>
+
+    <!-- Student Cards -->
+    <div class="students">
+      <div class="student-card">
+        <h2>John Doe</h2>
+        <p>Computer Science</p>
+        <button>View Profile</button>
+      </div>
+      <div class="student-card">
+        <h2>Jane Smith</h2>
+        <p>Mechanical Engineering</p>
+        <button>View Profile</button>
+      </div>
+      <div class="student-card">
+        <h2>Rahul Kumar</h2>
+        <p>Electrical Engineering</p>
+        <button>View Profile</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
